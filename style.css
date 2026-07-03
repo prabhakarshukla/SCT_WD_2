@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 body {
     font-family: Arial, sans-serif;
