@@ -60,16 +60,24 @@ pauseBtn.addEventListener("click", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-
     clearInterval(timer);
-
+    timer = null;
     isRunning = false;
-
     minutes = 0;
     seconds = 0;
     milliseconds = 0;
-
     updateDisplay();
 
 });
 
+resetBtn.addEventListener("click", function () {
+    clearInterval(timer);
+    timer = null;
+    isRunning = false;
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+    laps.innerHTML = "";
+    lapCount = 1;
+    updateDisplay();
+});
