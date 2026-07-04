@@ -52,3 +52,10 @@ startBtn.addEventListener("click", function () {
     }, 10);
 
 });
+pauseBtn.addEventListener("click", function () {
+
+    clearInterval(timer);
+
+    isRunning = false;
+
+});
