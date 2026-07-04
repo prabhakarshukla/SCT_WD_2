@@ -48,14 +48,11 @@ h1 {
 }
 
 .display {
-    font-size: 52px;
+    font-size: 48px;
+
     font-weight: bold;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px;
+
     margin-bottom: 25px;
-    border: 2px solid #e9ecef;
-    letter-spacing: 2px;
 }
 
 .buttons {
@@ -75,10 +72,9 @@ button {
     color: white;
     cursor: pointer;
     font-size: 16px;
-   transition: 0.3s;  
+   transition: 0.3s;
 }
-
-   .start-btn {
+.start-btn {
     background-color: #28a745;
 }
 
