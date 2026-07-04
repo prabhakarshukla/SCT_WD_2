@@ -48,41 +48,67 @@ h1 {
 }
 
 .display {
-    font-size: 48px;
-
+    font-size: 52px;
     font-weight: bold;
-
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 25px;
+    border: 2px solid #e9ecef;
+    letter-spacing: 2px;
 }
 
 .buttons {
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: center;
-
     gap: 10px;
-
     margin-bottom: 20px;
+    
 }
 
 button {
     padding: 10px 20px;
-
     border: none;
-
     border-radius: 6px;
-
     background-color: #007bff;
-
     color: white;
-
     cursor: pointer;
-
     font-size: 16px;
+   transition: 0.3s;  
+}
 
-    transition: 0.3s;
+   .start-btn {
+    background-color: #28a745;
+}
+
+.start-btn:hover {
+    background-color: #218838;
+}
+
+.pause-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.pause-btn:hover {
+    background-color: #e0a800;
+}
+
+.reset-btn {
+    background-color: #dc3545;
+}
+
+.reset-btn:hover {
+    background-color: #c82333;
+}
+
+.lap-btn {
+    background-color: #007bff;
+}
+
+.lap-btn:hover {
+    background-color: #0056b3;
 }
 
 button:hover {
