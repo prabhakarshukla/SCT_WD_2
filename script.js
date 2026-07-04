@@ -9,6 +9,7 @@ let milliseconds = 0;
 let seconds = 0;
 let minutes = 0;
 let isRunning = false;
+let lapCount = 1;
 
 function updateDisplay() {
 
