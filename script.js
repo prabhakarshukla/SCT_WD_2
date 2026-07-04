@@ -82,3 +82,22 @@ lapBtn.addEventListener("click", function () {
     laps.appendChild(lapItem);
     lapCount++;
 });
+
+document.addEventListener("keydown", function (event) {
+    if (event.code === "Space") {
+        event.preventDefault();
+        if (isRunning) {
+            pauseBtn.click();
+        } else {
+            startBtn.click();
+        }
+    }
+    if (event.code === "KeyR") {
+        resetBtn.click();
+    }
+    if (event.code === "KeyL") {
+        lapBtn.click();
+    }
+});
+
+
