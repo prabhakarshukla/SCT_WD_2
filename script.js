@@ -70,14 +70,14 @@ resetBtn.addEventListener("click", function () {
 
 });
 
-resetBtn.addEventListener("click", function () {
-    clearInterval(timer);
-    timer = null;
-    isRunning = false;
-    minutes = 0;
-    seconds = 0;
-    milliseconds = 0;
-    laps.innerHTML = "";
-    lapCount = 1;
-    updateDisplay();
+lapBtn.addEventListener("click", function () {
+    if (!isRunning) {
+        return;
+    }
+    const lapItem = document.createElement("li");
+    lapItem.textContent =
+        `Lap ${lapCount} - ${display.textContent}`;
+
+    laps.appendChild(lapItem);
+    lapCount++;
 });
