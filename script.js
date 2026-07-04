@@ -1,18 +1,15 @@
 const display = document.querySelector(".display");
-
 const startBtn = document.getElementById("start");
 const pauseBtn = document.getElementById("pause");
 const resetBtn = document.getElementById("reset");
-const lapBtn = document.getElementById("lap");
-
+const lapBtn = document.getElementById("lap");                        
 const laps = document.getElementById("laps");
 let timer = null;
-
 let milliseconds = 0;
 let seconds = 0;
 let minutes = 0;
-
 let isRunning = false;
+
 function updateDisplay() {
 
     const formattedMinutes = String(minutes).padStart(2, "0");
@@ -25,6 +22,7 @@ function updateDisplay() {
         `${formattedMinutes}:${formattedSeconds}:${formattedMilliseconds}`;
 
 }
+
 startBtn.addEventListener("click", function () {
 
     if (isRunning) {
@@ -52,6 +50,7 @@ startBtn.addEventListener("click", function () {
     }, 10);
 
 });
+
 pauseBtn.addEventListener("click", function () {
 
     clearInterval(timer);
@@ -59,3 +58,18 @@ pauseBtn.addEventListener("click", function () {
     isRunning = false;
 
 });
+
+resetBtn.addEventListener("click", function () {
+
+    clearInterval(timer);
+
+    isRunning = false;
+
+    minutes = 0;
+    seconds = 0;
+    milliseconds = 0;
+
+    updateDisplay();
+
+});
+
