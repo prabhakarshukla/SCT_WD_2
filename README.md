@@ -58,6 +58,10 @@ SCT_WD_2/
 ---
 
 ##  Preview
+Landing page 
+<img width="1917" height="875" alt="image" src="https://github.com/user-attachments/assets/049c5c56-6cca-47cd-941e-b8641a719219" />
+After Counting Laps
+<img width="1918" height="868" alt="image" src="https://github.com/user-attachments/assets/e930bec5-0442-429b-a915-322d101fbcb8" />
 
 
 
