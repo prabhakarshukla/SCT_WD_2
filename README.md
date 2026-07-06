@@ -3,6 +3,9 @@
 
 A simple and responsive **Stopwatch Web Application** built using **HTML, CSS, and JavaScript** as part of **SkillCraft Technology - Web Development Internship (Task 2)**.
 
+## deployed link
+https://mystopwatch-six.vercel.app/
+
 ##  Live Features
 
 *  Start the stopwatch
